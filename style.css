@@ -1,5 +1,42 @@
-html{
+*{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+body>div{
+    min-width: 40vw;
+    background: url(./astro.jpg) no-repeat;
+    background-size: cover;
+}
+form{
+    background:rgb(17, 1, 49);
+    color: white;
+}
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 50%;
+    margin: 40px auto;
+}
+label,input{
+    display: block;
+    width: 80%;
+    height: 1.7rem;
+}
+.controls>div{
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
