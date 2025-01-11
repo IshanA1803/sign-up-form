@@ -48,11 +48,12 @@
             </div>
             <div>
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" required minlength="8" maxlength="20" placeholder=" ">
+                <!-- empty placeholder used to select valid/invalid input -->
             </div>
             <div>
                 <label for="confirmPassword">CONFIRM PASSWORD</label>
-                <input type="password" id="confirmPassword" required>
+                <input type="password" id="confirmPassword" required minlength="8" maxlength="20" placeholder=" ">
             </div>
         </div>
         <p>
