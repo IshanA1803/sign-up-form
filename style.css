@@ -73,6 +73,12 @@ h2{
 input{
     width: 80%;
     height: 1.7rem;
+    border: none;
+    margin: 0px;
+    border: 3px solid  rgb(215, 156, 204);
+    border-radius: 5%;
+    outline: none;
+    opacity: 0.9;
 }
 label{
     width: 80%;
@@ -106,4 +112,14 @@ button:hover{
 }
 button:active{
     transform: scale(1.0);
+}
+input:focus{
+    border-color:rgb(212, 79, 170);
+    opacity: 1;
+}
+input:not(:placeholder-shown):valid{
+    border: 3px solid green;
+}
+input:not(:placeholder-shown):invalid{
+    border: 3px solid red;
 }
